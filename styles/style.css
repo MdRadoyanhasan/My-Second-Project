@@ -18,6 +18,9 @@ body{
 .header-section{
     display: flex;
 }
+.header-img{
+    display: flex;
+}
 .hero{
     color: #131318;
     font-size: 36px;
@@ -116,7 +119,7 @@ p{
     gap: 24px;
    
 }
-.banner-input{
+.banner-input {
     background: white;
     border-radius: 8px;
     padding: 16px;
@@ -137,7 +140,7 @@ p{
    
 
 }
-.banner-input input{
+.banner-input  select{
     border: none;
     
 }
@@ -153,9 +156,7 @@ p{
 li{
     display: flex;
 }
-.toure-img{
-    max-width: 546px;
-}
+
 /* Our Popular Tours end */
 
 .Destination{
@@ -168,6 +169,7 @@ li{
     gap: 5px;
     margin-bottom: 24px;
 }
+
 .chose-text{
     text-align: center;
 }
@@ -215,6 +217,7 @@ li{
     display: flex;
     justify-content: space-between;
     margin-top: 48px;
+    gap: 48px;
 }
 .login-from{
     border: 2px solid #FF5400;
@@ -258,6 +261,7 @@ li{
      
 
 }
+
 .discount p{
     color: white;
     font-size: 24px;
@@ -272,37 +276,54 @@ li{
 }
 .footer-content{
     background: rgba(19, 19, 24, 0.05);
-    text-align: center;
     align-items: center;
 }
-.footer-heding{
+.footer-img{
     display: flex;
     justify-content: center;
    
+}
+.items{
+   text-align: center;
+}
+.items hr{
+    width: 400px;
 }
 @media screen and (max-width:600px) {
     header{
         padding: 20px;
     }
-    .items-container,
+    .header-section,
     .nav-container,
+    .items-container,
     .banner-input-type,
     .toure,
     .row,
     .travel-card,
     .travel-card-tow,
-    .from-type,
-    .footer-heding{
+    .from-type{
         flex-direction: column;
     }
-    img{
+    .toure-img img{
         width: 100%;
-        margin: 0;
     }
-    .discount{
-        position: static;
-        max-width: 300px;
+    .from-img img{
+        width: 100%;
     }
+    .discount {
+        
+        width: 258px;
+       
+        bottom: 95px;
+       
+        left: 192px;
+        padding: 10px 0;
+    }
+    .banner-input-type {
+        width: 76%;
+        margin: 0 auto;
+    }
+
     
 }
    
