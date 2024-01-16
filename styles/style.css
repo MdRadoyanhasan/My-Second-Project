@@ -18,6 +18,16 @@ body{
 .header-section{
     display: flex;
 }
+.hero{
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+}
+.travelling{
+    color: #FF5400;
+    font-size: 36px;
+    font-weight: 800;
+}
 .nav-container{
     display: flex;
     min-height: 20px;
@@ -56,6 +66,7 @@ p{
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    
 }
 .btn-primary{
     background-color:#FF5400;
@@ -77,7 +88,7 @@ p{
    
 }
 .banner{
-    max-width:400 px;
+    
     margin: 0 auto;
     text-align: center;
     padding: 106px 0;
@@ -95,9 +106,8 @@ p{
    font-size: 16px;
    font-weight: 400;
    line-height: 26px;
-   max-width: 676px;
    text-align: center;
-   padding-left: 276px;
+   
    padding-bottom: 48px;
 }
 .banner-input-type{
@@ -119,16 +129,17 @@ p{
 .find-now{
     background: #FF5400;
     border-radius: 8px;
-    padding: 16px;
+    padding:20px;
     text-align: center;
     color: rgba(19, 19, 24, 0.50);
     font-size: 16px; 
     font-weight: 400;
+   
 
 }
 .banner-input input{
     border: none;
-    border
+    
 }
 
 /* Our Popular Tours start */
@@ -136,6 +147,7 @@ p{
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+    gap: 40px;
     
 }
 li{
@@ -149,35 +161,148 @@ li{
 .Destination{
     text-align: center;
 }
+
 .row{
     display: flex;
     justify-content: space-between;
     gap: 5px;
     margin-bottom: 24px;
 }
-
-
-
-
-/* footer section start now */
-.footer-section{
-    background-color:rgba(19, 19, 24, 0.05) ;
-    align-items: center;
-
+.chose-text{
+    text-align: center;
 }
-.hero-travel{
-      display: flex;
-      text-align: center;
+
+.travel-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.travel-card-hotel{
+    background: rgba(251, 181, 99, 0.05); 
+    border-radius: 16px; 
+    border: 1px rgba(251, 181, 99, 0.20) solid;
+    padding: 32px;
+    padding-left: 32px;
+}
+.travel-card-service{
+    background: rgba(41, 206, 246, 0.05);
+    border-radius: 16px;
+    border: 1px rgba(41, 206, 246, 0.20) solid;
+    padding: 32px;
+    padding-left: 32px;
+}
+.travel-card-tow{
+    display: flex;
+    align-items: center;
+}
+.travel-card-price{
+    background: rgba(233, 68, 68, 0.05);
+    border-radius: 16px;
+    border: 1px rgba(233, 68, 68, 0.20) solid;
+    padding: 32px;
+    padding-left: 32px;
+    max-width: 573px;
+  
+   
     
 }
-.hero{
-    color: #131318;
-    font-size: 32px;
-    font-weight: 800;
+.travel-card-tow{
+    justify-content: center;
 }
-.travelling{
-    color: #FF5400;
-    font-size: 32px;
+  
+.from-type{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+.login-from{
+    border: 2px solid #FF5400;
+    padding: 20px 20px;
+    margin-bottom: 40px;
+}
+.from-heading{
+    color: #131318;
+    font-size: 24px;
     font-weight: 800;
 
 }
+.login-from input{
+    display: block;
+    margin-top: 20px;
+    background: rgba(19, 19, 24, 0.05); 
+    border-radius: 8px;
+    padding: 16px;
+}
+ .subscribe{
+    margin-top: 20px;
+    background: #FF5400;
+    border-radius: 8px;
+    padding: 16px 50px;
+    margin-bottom: 40px;  
+}
+.discount{
+    background: #FF5400; 
+    border-radius: 16px;
+    color: #FFF;
+    width: 324px;
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+    transform: rotate(-25.63deg);
+    transform-origin: 0 0;
+    margin-right: auto;
+    left:327px ;
+
+   
+     
+
+}
+.discount p{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+.discount h3{
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+}
+.footer-content{
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+    align-items: center;
+}
+.footer-heding{
+    display: flex;
+    justify-content: center;
+   
+}
+@media screen and (max-width:600px) {
+    header{
+        padding: 20px;
+    }
+    .items-container,
+    .nav-container,
+    .banner-input-type,
+    .toure,
+    .row,
+    .travel-card,
+    .travel-card-tow,
+    .from-type,
+    .footer-heding{
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+        margin: 0;
+    }
+    .discount{
+        position: static;
+        max-width: 300px;
+    }
+    
+}
+   
